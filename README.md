@@ -1,4 +1,4 @@
-# Project Name (Windgarden)
+# Project Name-Windgarden
 Generate static geometric visuals (e.g., horizontal line patterns and circular/ring graphics) with configurable parameters; optionally extensible for data scraping or asset preparation.
 
 ## Features
@@ -9,45 +9,29 @@ Generate static geometric visuals (e.g., horizontal line patterns and circular/r
 - Optional utility module(s) for scraping / preprocessing (scraping_util*)
 - Clean dependency management via requirements.txt
 
-##  Repository Structure 
-.
-├── my_script.py               # Main entry script (generation logic / dispatcher)
-├── scraping_util*.py          # (Optional) scraping / preprocessing utilities
-├── requirements.txt           # Python dependencies
-├── Figure_1-line...png        # Sample line-based output
-├── newplot.png                # Sample ring / circular output
-├── README.md                  # Project documentation
-├── .gitignore
-└── .DS_Store                  # macOS system file (ignored)
-```
-(Modify/remove lines if your structure differs.)
+## Repository Structure (Table Form)
 
-##  Preview
-| Type | Example |
-|------|---------|
-| Line / horizontal pattern | ![Line Example](Figure_1-line...png) |
-| Ring / circular form | ![Ring Example](newplot.png) |
-
-## 🚀 Quick Start
-
-### 1. Requirements
-- Python >= 2.32.3
+| File / Dir | Description |
+|-----------|-------------|
+| `my_script.py` | Main entry script (generation / dispatcher) |
+| `scraping_util*.py` | Optional scraping / preprocessing utilities |
+| `requirements.txt` | Python dependencies |
+| `Figure_1-line...png` | Sample line-based output |
+| `newplot.png` | Sample circular output |
+| `README.md` | Project documentation |
+| `.gitignore` | Git ignore rules |
+| `.DS_Store` | macOS system file (ignored) |
 
 
-```
-# Install dependencies
-pip install -r requirements.txt
-```
-
-# Generate a horizontal line graphic
+## Generate a horizontal line graphic
 python my_script.py 
 
-# Generate a ring visualization
+## Generate a ring visualization
 python my_script.py 
 
-# List all options
+## List all options
 python my_script.py --help
-```
+
 
 ##  Code Logic (Wind Garden Visualization)
 
@@ -176,7 +160,7 @@ Two variants:
    - Subtle green adjustment
 
 You could unify this for consistency by defining one color utility reused across backends.
-```
+
 ### 7. Example Data-to-Visual Flow (Narrative)
 1. Raw API: wind_dir = 135°, wind_speed = 5.2 m/s, temp = 21℃
 2. Direction 135° ⇒ 8 petals
