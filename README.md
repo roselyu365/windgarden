@@ -1,4 +1,4 @@
-# Project Name-Windgarden
+# Windgarden
 An animated timeline visualization built with Matplotlib that uses “flower” geometries to represent 7-day hourly weather data (temperature, wind speed, wind direction) for a given latitude/longitude from the Open-Meteo API. Each hour is represented as a stylized “flower” whose:
 - Petal count encodes wind direction
 - Petal length encodes wind speed
